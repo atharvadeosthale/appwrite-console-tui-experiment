@@ -1,0 +1,31 @@
+{
+  "name": "appwrite-console-tui",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun run src/index.tsx",
+    "dev:headless": "APPWRITE_TUI_HEADLESS=1 bun run src/index.tsx",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@appwrite.io/console": "file:../../console/node_modules/@appwrite.io/console",
+    "@opentui/core": "^0.1.90",
+    "@opentui/react": "^0.1.90",
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.1",
+    "@types/react": "^19.0.12",
+    "bun-types": "^1.3.11",
+    "typescript": "^5.9.3"
+  },
+  "optionalDependencies": {
+    "@opentui/core-darwin-arm64": "0.1.90",
+    "@opentui/core-darwin-x64": "0.1.90",
+    "@opentui/core-linux-arm64": "0.1.90",
+    "@opentui/core-linux-x64": "0.1.90",
+    "@opentui/core-win32-arm64": "0.1.90",
+    "@opentui/core-win32-x64": "0.1.90"
+  }
+}
